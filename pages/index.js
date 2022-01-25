@@ -1,6 +1,6 @@
 import appConfig from "../config.json";
 
-import { Box, TextField } from "@skynexui/components"
+import {  TextField } from "@skynexui/components"
 
 function GlobalStyle(){
     return(
