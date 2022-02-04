@@ -27,8 +27,7 @@ function Title(props){
 
 
 function HomePage() {
-    const [username , setUsername] = React.useState("omariosouto");
-    //valor booleano para o estado
+    const [username , setUsername] = React.useState("");
 
     return(
         <div>
@@ -59,7 +58,7 @@ function HomePage() {
                 
                 onSubmit={function(event){
                 event.preventDefault();
-                Router.push("/chat")
+                Router.push("/chat?username=" + username)
                 }}
                 >
 
@@ -88,11 +87,10 @@ function HomePage() {
                     <Button type="submit" styleSheet={{width: "100%" }} label="Entrar"></Button>
 
                 </Box>
+                
                 <Box styleSheet={{
-                    width: "200px",
-                    height: "240px",
-                    backgroundColor: "#181F25",
-                    border: "1px solid red",
+                    Width: "250px",
+                    minHeight: "240px",
                     borderRadius: "5px",
                     textAlign: "center",
                     display: "flex",
@@ -105,7 +103,8 @@ function HomePage() {
                     }}/>
                     <Text styleSheet={{
                         marginTop: "11px",
-                        color: "white"
+                        color: "white",
+                        marginTop: "auto"
                     }}>{username}</Text>
                 </Box>
                 
