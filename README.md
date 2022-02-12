@@ -1,5 +1,5 @@
 # Discord alike chat app
-Chat app that you could log in and make all CRUD operations 
+Chat app that you could log in and make all CRUD operations. You can access this project by clicking **this link**
 
 ## Technologies
 
